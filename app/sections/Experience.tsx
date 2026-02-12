@@ -7,7 +7,7 @@ import FadeUp from "../components/FadeUp";
 
 const education = [
   {
-    period: "2026-27",
+    period: "Feb 2026 - May 2026",
     title: "Digital Marketing Certification",
     institution: "Beegains Academy",
     icon: GraduationCap,
@@ -34,7 +34,7 @@ const education = [
 
 const work = [
   {
-    period: "2024-Present",
+    period: "2026 - Present",
     title: "Digital Marketing Intern",
     company: "Beegains IT Solutions",
     description:
