@@ -7,6 +7,7 @@ import {
   Phone,
   Mail,
   Linkedin,
+  Instagram,
   MapPin,
   Send,
   ArrowRight,
@@ -26,14 +27,20 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "nashif@example.com",
-    href: "mailto:nashif@example.com",
+    value: "nashifali73@gmail.com",
+    href: "mailto:nashifali73@gmail.com",
+  },
+  {
+    icon: Instagram,
+    label: "Instagram",
+    value: "@nashi__ali",
+    href: "https://www.instagram.com/nashi__ali?igsh=OXM2dXRubnMzbHV2",
   },
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/nashifali",
-    href: "https://linkedin.com",
+    value: "linkedin.com/in/nashif-ali",
+    href: "https://www.linkedin.com/in/nashif-ali-5b9994215?utm_source=share_via&utm_content=profile&utm_medium=member_android",
   },
   {
     icon: MapPin,

@@ -28,8 +28,8 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/nashi__ali?igsh=OXM2dXRubnMzbHV2", label: "Instagram" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/nashif-ali-5b9994215?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn" },
   { icon: Twitter, href: "#", label: "Twitter" },
   { icon: Youtube, href: "#", label: "YouTube" },
 ];
