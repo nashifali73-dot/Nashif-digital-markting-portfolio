@@ -1,0 +1,115 @@
+[00:00:04.417] Server  LOG     ✓ Ready in 3.1s
+[00:00:07.508] Server  LOG     ○ Compiling / ...
+[00:00:13.838] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.225] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <Home>
+      <Header>
+      <Home>
+        <main>
+          <Hero>
+          <Services>
+          ...
+            <div className="max-w-7xl ...">
+              <div className="grid lg:gr...">
+                <div className="flex justi...">
+                  <FadeUp>
+                    <motion.div initial={{opacity:0,y:30}} whileInView={{opacity:1,y:0}} viewport={{once:true, ...}} ...>
+                      <div className="" style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                        <div className="relative w...">
+                          <div>
+                          <div>
+                          <motion.div>
+                          <motion.div>
+                          <motion.div>
+                          <motion.div>
+                          <motion.div className="absolute z-20" style={{left:"calc...", ...}} animate={{rotate:360}} ...>
+                            <div
+                              className="absolute z-20"
+                              style={{
++                               left: "calc(50% + -70.00000000000006px)"
+-                               left: "calc(50% - 70px)"
++                               top: "calc(50% + -121.24355652982138px)"
+-                               top: "calc(50% - 121.244px)"
++                               transform: "translate(-50%, -50%)"
+-                               transform: "translate(-50%, -50%)"
+                              }}
+                              ref={function useMotionRef.useCallback}
+                            >
+                          ...
+                ...
+          ...
+      ...
+
+[00:01:20.985] Browser WARN    Image with src "/nashif-photo.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:01:22.471] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:01:22.920] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <Home>
+      <Header>
+      <Home>
+        <main>
+          <Hero>
+          <Services>
+          ...
+            <div className="max-w-7xl ...">
+              <div className="grid lg:gr...">
+                <div className="flex justi...">
+                  <FadeUp>
+                    <motion.div initial={{opacity:0,y:30}} whileInView={{opacity:1,y:0}} viewport={{once:true, ...}} ...>
+                      <div className="" style={{opacity:0, ...}} ref={function useMotionRef.useCallback}>
+                        <div className="relative w...">
+                          <div>
+                          <div>
+                          <motion.div>
+                          <motion.div>
+                          <motion.div>
+                          <motion.div>
+                          <motion.div className="absolute z-20" style={{left:"calc...", ...}} animate={{rotate:360}} ...>
+                            <div
+                              className="absolute z-20"
+                              style={{
++                               left: "calc(50% + -70.00000000000006px)"
+-                               left: "calc(50% - 70px)"
++                               top: "calc(50% + -121.24355652982138px)"
+-                               top: "calc(50% - 121.244px)"
++                               transform: "translate(-50%, -50%)"
+-                               transform: "translate(-50%, -50%)"
+                              }}
+                              ref={function useMotionRef.useCallback}
+                            >
+                          ...
+                ...
+          ...
+      ...
+
+[00:01:23.864] Browser WARN    Image with src "/nashif-photo.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[00:03:01.073] Server  LOG     ✓ Compiled in 2.4s
+[00:04:04.925] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:49:27.824] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:49:29.390] Browser WARN    Image with src "/nashif-photo.jpg" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading

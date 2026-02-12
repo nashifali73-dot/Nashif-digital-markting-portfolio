@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary: #2563EB;
+  --accent: #F97316;
+  --gray: #F5F5F5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-accent: var(--accent);
+  --color-gray: var(--gray);
+  --font-sans: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+/* Marquee Animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+/* Orbit Animation */
+@keyframes orbit {
+  0% {
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(120px) rotate(-360deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbit 20s linear infinite;
+}
+
+/* Spin Animation for Badge */
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
