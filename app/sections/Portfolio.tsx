@@ -107,16 +107,14 @@ export default function Portfolio() {
                   <motion.div
                     whileHover={{ scale: 1.1 }}
                     transition={{ duration: 0.6 }}
-                    className={`absolute inset-0 bg-gradient-to-br ${project.color}`}
+                    className="absolute inset-0"
                   >
-                    {/* Demo Placeholder */}
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-white text-center">
-                        <div className="text-6xl font-bold opacity-30">
-                          {project.title.charAt(0)}
-                        </div>
-                      </div>
-                    </div>
+                    <Image
+                      src={project.mainImage}
+                      alt={project.title}
+                      fill
+                      className="object-cover"
+                    />
                   </motion.div>
 
                   {/* Hover Overlay */}
@@ -212,14 +210,15 @@ export default function Portfolio() {
                     <TrendingUp className="w-5 h-5 text-[#F97316]" />
                     Campaign Overview
                   </h3>
-                  <div className={`h-64 md:h-80 rounded-xl bg-gradient-to-br ${selectedProject.color} flex items-center justify-center`}>
-                    <div className="text-white text-center p-8">
-                      <div className="text-8xl font-bold opacity-30 mb-4">
-                        {selectedProject.title.charAt(0)}
-                      </div>
-                      <p className="text-lg opacity-80">{selectedProject.description}</p>
-                    </div>
+                  <div className="relative h-64 md:h-80 rounded-xl overflow-hidden">
+                    <Image
+                      src={selectedProject.mainImage}
+                      alt={selectedProject.title}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
+                  <p className="text-gray-600 mt-4">{selectedProject.description}</p>
                 </div>
 
                 {/* Performance Stats */}
