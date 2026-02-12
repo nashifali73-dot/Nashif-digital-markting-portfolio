@@ -146,6 +146,8 @@ export default function About() {
                   variant="featured"
                   size="lg"
                   icon={<Download className="w-5 h-5" />}
+                  href="/Nashif-Ali-Resume.pdf"
+                  download
                 >
                   Download CV
                 </Button>

@@ -1543,6 +1543,8 @@ function About() {
                                                     lineNumber: 148,
                                                     columnNumber: 25
                                                 }, void 0),
+                                                href: "/Nashif-Ali-Resume.pdf",
+                                                download: true,
                                                 children: "Download CV"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/sections/About.tsx",
@@ -1554,7 +1556,7 @@ function About() {
                                                 children: "Nashif Ali"
                                             }, void 0, false, {
                                                 fileName: "[project]/app/sections/About.tsx",
-                                                lineNumber: 152,
+                                                lineNumber: 154,
                                                 columnNumber: 17
                                             }, this)
                                         ]
