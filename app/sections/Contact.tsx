@@ -1,7 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   Phone,
   Mail,
@@ -9,6 +10,8 @@ import {
   MapPin,
   Send,
   ArrowRight,
+  X,
+  CheckCircle,
 } from "lucide-react";
 import FadeUp from "../components/FadeUp";
 import Button from "../components/Button";
@@ -49,9 +52,11 @@ interface FormData {
 }
 
 export default function Contact() {
+  const [showPopup, setShowPopup] = useState(false);
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm<FormData>();
 
@@ -71,11 +76,17 @@ export default function Contact() {
       mode: "no-cors",
     })
       .then(() => {
-        alert("Thank you for your message! I'll get back to you soon.");
+        setShowPopup(true);
+        reset();
       })
       .catch(() => {
-        alert("Thank you for your message! I'll get back to you soon.");
+        setShowPopup(true);
+        reset();
       });
+  };
+
+  const closePopup = () => {
+    setShowPopup(false);
   };
 
   return (
@@ -238,6 +249,49 @@ export default function Contact() {
           </FadeUp>
         </div>
       </div>
+
+      {/* Success Popup */}
+      <AnimatePresence>
+        {showPopup && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4"
+            onClick={closePopup}
+          >
+            <motion.div
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="bg-white rounded-2xl p-8 max-w-md w-full text-center relative"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={closePopup}
+                className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              <div className="w-16 h-16 bg-[#F97316] rounded-full flex items-center justify-center mx-auto mb-4">
+                <CheckCircle className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-[#2563EB] mb-2">
+                Thank You!
+              </h3>
+              <p className="text-gray-600 mb-6">
+                Your message has been submitted successfully. I&apos;ll get back to you soon!
+              </p>
+              <button
+                onClick={closePopup}
+                className="bg-[#2563EB] text-white px-8 py-3 rounded-full font-medium hover:bg-[#1d4ed8] transition-colors"
+              >
+                Got it!
+              </button>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }

@@ -97,3 +97,29 @@ Import trace:
 [05:26:47.075] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\hp\OneDrive\Desktop\Porftolio DM NAs\portfolio\dist\dev\server\app\page\build-manifest.json'
 [05:26:47.735] Server  ERROR   Error: ENOENT: no such file or directory, open 'C:\Users\hp\OneDrive\Desktop\Porftolio DM NAs\portfolio\dist\dev\server\app\page\build-manifest.json'
 [05:26:48.008] Server  ERROR   Error: ENOENT: no such file or directory, open 'C:\Users\hp\OneDrive\Desktop\Porftolio DM NAs\portfolio\dist\dev\server\pages\_app\build-manifest.json'
+[05:45:29.190] Server  ERROR   ⨯ ./node_modules/lucide-react/dist/esm/lucide-react.js:51:1
+Module not found: Can't resolve './icons/circle-check-big.js'
+  49 | export { default as ArrowRightCircle, default as ArrowRightCircleIcon, default as CircleArrowRight, default as CircleArrowRightIcon, default as LucideArrowRightCircle, default as LucideCircleArrowRight } from './icons/circle-arrow-right.js';
+  50 | export { default as ArrowUpCircle, default as ArrowUpCircleIcon, default as CircleArrowUp, default as CircleArrowUpIcon, default as LucideArrowUpCircle, default as LucideCircleArrowUp } from './icons/circle-arrow-up.js';
+> 51 | export { default as CheckCircle, default as CheckCircleIcon, default as CircleCheckBig, default as CircleCheckBigIcon, default as LucideCheckCircle, default as LucideCircleCheckBig } from './icons/circle-check-big.js';
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  52 | export { default as CheckCircle2, default as CheckCircle2Icon, default as CircleCheck, default as CircleCheckIcon, default as LucideCheckCircle2, default as LucideCircleCheck } from './icons/circle-check.js';
+  53 | export { default as ChevronDownCircle, default as ChevronDownCircleIcon, default as CircleChevronDown, default as CircleChevronDownIcon, default as LucideChevronDownCircle, default as LucideCircleChevronDown } from './icons/circle-chevron-down.js';
+  54 | export { default as ChevronLeftCircle, default as ChevronLeftCircleIcon, default as CircleChevronLeft, default as CircleChevronLeftIcon, default as LucideChevronLeftCircle, default as LucideCircleChevronLeft } from './icons/circle-chevron-left.js';
+
+Failed to restore task data (corrupted database or bug): Meta for <ModuleAssetContext as AssetContext>::process_resolve_result (TaskId 180775))
+
+Debug info:
+- Execution of <ModuleAssetContext as AssetContext>::resolve_asset failed
+- Failed to restore task data (corrupted database or bug): Meta for <ModuleAssetContext as AssetContext>::process_resolve_result (TaskId 180775))
+  
+  Caused by:
+      0: Looking up data for TaskId 180775 from database failed
+      1: Unable to open static sorted file referenced from 00000098.meta
+      2: Unable to open static sorted file 00000092.sst
+      3: The system cannot find the file specified. (os error 2)
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
