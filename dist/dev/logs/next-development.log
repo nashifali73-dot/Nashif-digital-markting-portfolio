@@ -94,3 +94,6 @@ Import trace:
 [05:24:40.550] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\hp\OneDrive\Desktop\Porftolio DM NAs\portfolio\dist\dev\server\app\page\build-manifest.json'
 [05:24:40.854] Server  ERROR   Error: ENOENT: no such file or directory, open 'C:\Users\hp\OneDrive\Desktop\Porftolio DM NAs\portfolio\dist\dev\server\app\page\build-manifest.json'
 [05:24:41.116] Server  ERROR   Error: ENOENT: no such file or directory, open 'C:\Users\hp\OneDrive\Desktop\Porftolio DM NAs\portfolio\dist\dev\server\pages\_app\build-manifest.json'
+[05:26:47.075] Server  ERROR   ⨯ Error: ENOENT: no such file or directory, open 'C:\Users\hp\OneDrive\Desktop\Porftolio DM NAs\portfolio\dist\dev\server\app\page\build-manifest.json'
+[05:26:47.735] Server  ERROR   Error: ENOENT: no such file or directory, open 'C:\Users\hp\OneDrive\Desktop\Porftolio DM NAs\portfolio\dist\dev\server\app\page\build-manifest.json'
+[05:26:48.008] Server  ERROR   Error: ENOENT: no such file or directory, open 'C:\Users\hp\OneDrive\Desktop\Porftolio DM NAs\portfolio\dist\dev\server\pages\_app\build-manifest.json'

@@ -45,8 +45,6 @@ interface FormData {
   email: string;
   phone: string;
   interest: string;
-  budget: string;
-  country: string;
   message: string;
 }
 
@@ -58,9 +56,26 @@ export default function Contact() {
   } = useForm<FormData>();
 
   const onSubmit = (data: FormData) => {
-    console.log(data);
-    // Handle form submission
-    alert("Thank you for your message! I'll get back to you soon.");
+    // Create form data for Google Form
+    const formData = new FormData();
+    formData.append("entry.782957590", data.name);
+    formData.append("entry.1951311847", data.email);
+    formData.append("entry.1443214438", data.phone);
+    formData.append("entry.1520782477", data.interest);
+    formData.append("entry.1383773606", data.message);
+
+    // Submit to Google Form
+    fetch("https://docs.google.com/forms/u/0/d/e/1FAIpQLSfO0pYl334hTndzpQSgWIbEJWIa_Tg1NEwNaES-_uo09PU4Xw/formResponse", {
+      method: "POST",
+      body: formData,
+      mode: "no-cors",
+    })
+      .then(() => {
+        alert("Thank you for your message! I'll get back to you soon.");
+      })
+      .catch(() => {
+        alert("Thank you for your message! I'll get back to you soon.");
+      });
   };
 
   return (
@@ -176,12 +191,10 @@ export default function Contact() {
                     className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F97316] focus:ring-2 focus:ring-[#F97316]/20 outline-none transition-all bg-white"
                   >
                     <option value="">Select a service</option>
-                    <option value="meta-ads">Meta Ads</option>
-                    <option value="google-ads">Google Ads</option>
-                    <option value="seo">SEO</option>
-                    <option value="content">Content Creation</option>
-                    <option value="design">Graphic Design</option>
-                    <option value="other">Other</option>
+                    <option value="Digital Marketing">Digital Marketing</option>
+                    <option value="SEO">SEO</option>
+                    <option value="Content Marketing">Content Marketing</option>
+                    <option value="Meta Ads">Meta Ads</option>
                   </select>
                   {errors.interest && (
                     <p className="text-red-500 text-sm mt-1">
@@ -190,52 +203,18 @@ export default function Contact() {
                   )}
                 </div>
 
-                {/* Budget */}
-                <div>
-                  <label className="block text-sm font-medium text-[#2563EB] mb-2">
-                    Budget
-                  </label>
-                  <select
-                    {...register("budget")}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F97316] focus:ring-2 focus:ring-[#F97316]/20 outline-none transition-all bg-white"
-                  >
-                    <option value="">Select budget range</option>
-                    <option value="small">$500 - $1,000</option>
-                    <option value="medium">$1,000 - $5,000</option>
-                    <option value="large">$5,000 - $10,000</option>
-                    <option value="enterprise">$10,000+</option>
-                  </select>
-                </div>
 
-                {/* Country */}
-                <div>
-                  <label className="block text-sm font-medium text-[#2563EB] mb-2">
-                    Country
-                  </label>
-                  <select
-                    {...register("country")}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F97316] focus:ring-2 focus:ring-[#F97316]/20 outline-none transition-all bg-white"
-                  >
-                    <option value="">Select country</option>
-                    <option value="india">India</option>
-                    <option value="usa">United States</option>
-                    <option value="uk">United Kingdom</option>
-                    <option value="canada">Canada</option>
-                    <option value="australia">Australia</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
               </div>
 
               {/* Message */}
               <div className="mt-6">
-                <label className="block text-sm font-medium text-[#1B4332] mb-2">
+                <label className="block text-sm font-medium text-[#2563EB] mb-2">
                   Message *
                 </label>
                 <textarea
                   {...register("message", { required: "Message is required" })}
                   rows={4}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#FFB800] focus:ring-2 focus:ring-[#FFB800]/20 outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F97316] focus:ring-2 focus:ring-[#F97316]/20 outline-none transition-all resize-none"
                   placeholder="Tell me about your project..."
                 />
                 {errors.message && (
@@ -250,7 +229,7 @@ export default function Contact() {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full mt-6 bg-[#1B4332] text-white font-medium py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#143829] transition-colors"
+                className="w-full mt-6 bg-[#2563EB] text-white font-medium py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#1d4ed8] transition-colors"
               >
                 Submit
                 <ArrowRight className="w-5 h-5" />
