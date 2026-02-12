@@ -37,13 +37,32 @@ export default function Hero() {
               </div>
             </FadeUp>
 
-            <FadeUp delay={0.2}>
-              <h1 className="text-[32px] md:text-[48px] lg:text-[56px] font-bold leading-[1.2] tracking-[-0.02em] mb-4">
-                <span className="text-[#1A1A1A]">I&apos;m </span>
-                <span className="text-[#2563EB] italic underline decoration-[#2563EB] decoration-2 underline-offset-4">Nashif Ali,</span>{" "}
-                <span className="text-[#F97316]">Digital Marketer Based in INDIA</span>
-              </h1>
-            </FadeUp>
+            <h1 className="text-[32px] md:text-[48px] lg:text-[56px] font-bold leading-[1.2] tracking-[-0.02em] mb-4">
+              <motion.span
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
+                className="inline-block text-[#1A1A1A]"
+              >
+                I&apos;m{" "}
+              </motion.span>
+              <motion.span
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+                className="inline-block text-[#2563EB] italic underline decoration-[#2563EB] decoration-2 underline-offset-4"
+              >
+                Nashif Ali,
+              </motion.span>{" "}
+              <motion.span
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.45, ease: "easeOut" }}
+                className="inline-block text-[#F97316]"
+              >
+                Digital Marketer Based in INDIA
+              </motion.span>
+            </h1>
 
             <FadeUp delay={0.3}>
               <p className="text-lg text-gray-600 mb-8 max-w-lg">
