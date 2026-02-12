@@ -9,8 +9,8 @@ import AnimatedCounter from "../components/AnimatedCounter";
 import Button from "../components/Button";
 
 const stats = [
-  { value: 100, suffix: "+", label: "Projects" },
-  { value: 50, suffix: "+", label: "Industries" },
+  { value: 10, suffix: "+", label: "Projects" },
+  { value: 5, suffix: "+", label: "Industries" },
   { value: 1, suffix: "+", label: "Years" },
 ];
 
