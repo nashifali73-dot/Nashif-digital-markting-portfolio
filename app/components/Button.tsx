@@ -11,6 +11,7 @@ interface ButtonProps {
   onClick?: () => void;
   className?: string;
   icon?: ReactNode;
+  download?: boolean;
 }
 
 export default function Button({
@@ -21,6 +22,7 @@ export default function Button({
   onClick,
   className = "",
   icon,
+  download,
 }: ButtonProps) {
   const baseStyles =
     "inline-flex items-center justify-center gap-2 font-medium rounded-full transition-all duration-300";
@@ -58,6 +60,7 @@ export default function Button({
         className={combinedClassName}
         whileHover={{ y: -2 }}
         whileTap={{ scale: 0.98 }}
+        download={download}
       >
         {content}
       </motion.a>
