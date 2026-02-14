@@ -21,8 +21,8 @@ export default function Hero() {
       className="relative min-h-screen flex flex-col justify-center pt-20 overflow-hidden bg-white"
     >
       {/* Background decoration */}
-      <div className="absolute top-20 right-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#2563EB]/5 rounded-full blur-3xl" />
+      <div className="absolute top-20 right-0 w-96 h-96 bg-[#FFB800]/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-[#1B4332]/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
@@ -30,8 +30,8 @@ export default function Hero() {
           <div className="order-2 lg:order-1">
             <FadeUp delay={0.1}>
               <div className="inline-flex items-center gap-2 bg-[#F5F5F5] rounded-full px-4 py-2 mb-6">
-                <Sparkles className="w-4 h-4 text-[#F97316]" />
-                <span className="text-sm font-medium text-[#2563EB]">
+                <Sparkles className="w-4 h-4 text-[#FFB800]" />
+                <span className="text-sm font-medium text-[#1B4332]">
                   Hello There!
                 </span>
               </div>
@@ -50,7 +50,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-                className="inline-block text-[#2563EB] italic underline decoration-[#2563EB] decoration-2 underline-offset-4"
+                className="inline-block text-[#1B4332] italic underline decoration-[#1B4332] decoration-2 underline-offset-4"
               >
                 Nashif Ali,
               </motion.span>{" "}
@@ -58,7 +58,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.45, ease: "easeOut" }}
-                className="inline-block text-[#F97316]"
+                className="inline-block text-[#FFB800]"
               >
                 Digital Marketer Based in INDIA
               </motion.span>
@@ -96,10 +96,10 @@ export default function Hero() {
                 {/* Main Photo Container */}
                 <div className="relative w-72 h-72 md:w-96 md:h-96">
                   {/* Orange border circle */}
-                  <div className="absolute inset-0 rounded-full border-4 border-[#F97316]" />
+                  <div className="absolute inset-0 rounded-full border-4 border-[#FFB800]" />
 
                   {/* Photo */}
-                  <div className="absolute inset-2 rounded-full overflow-hidden z-10 bg-[#2563EB]">
+                  <div className="absolute inset-2 rounded-full overflow-hidden z-10 bg-[#1B4332]">
                     <Image
                       src="/nashif-photo.jpg"
                       alt="Nashif Ali - Digital Marketer"
@@ -127,7 +127,7 @@ export default function Hero() {
                           d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0"
                         />
                       </defs>
-                      <text className="text-[10px] fill-[#2563EB] font-semibold uppercase tracking-widest">
+                      <text className="text-[10px] fill-[#1B4332] font-semibold uppercase tracking-widest">
                         <textPath href="#circlePath">
                           Hire Me • Hire Me • Hire Me •
                         </textPath>
@@ -135,7 +135,7 @@ export default function Hero() {
                     </svg>
                   </motion.div>
                   <div className="absolute -top-4 -right-4 w-24 h-24 flex items-center justify-center pointer-events-none">
-                    <div className="w-8 h-8 bg-[#F97316] rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 bg-[#FFB800] rounded-full flex items-center justify-center">
                       <span className="text-white text-xs">★</span>
                     </div>
                   </div>
@@ -147,7 +147,7 @@ export default function Hero() {
                     transition={{ delay: 0.6, duration: 0.5 }}
                     className="absolute -left-8 top-1/4 bg-white shadow-lg rounded-full px-4 py-2 z-20"
                   >
-                    <span className="text-sm font-medium text-[#2563EB]">
+                    <span className="text-sm font-medium text-[#1B4332]">
                       Meta Ads
                     </span>
                   </motion.div>
@@ -167,7 +167,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.8, duration: 0.5 }}
-                    className="absolute left-1/4 -bottom-4 bg-[#F97316] shadow-lg rounded-full px-4 py-2 z-20"
+                    className="absolute left-1/4 -bottom-4 bg-[#FFB800] shadow-lg rounded-full px-4 py-2 z-20"
                   >
                     <span className="text-sm font-medium text-white">
                       SEO Expert
@@ -181,7 +181,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom Marquee */}
-      <div className="mt-auto bg-[#F97316] py-4">
+      <div className="mt-auto bg-[#FFB800] py-4">
         <Marquee className="text-white">
           {marqueeItems.map((item, index) => (
             <span key={index} className="flex items-center gap-8">

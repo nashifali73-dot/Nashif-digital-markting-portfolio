@@ -34,7 +34,7 @@ export default function Tools() {
                 <motion.div
                   whileHover={{ scale: 1.1, rotate: [0, -10, 10, 0] }}
                   transition={{ duration: 0.5 }}
-                  className="w-16 h-16 mx-auto mb-4 bg-[#2563EB] rounded-xl flex items-center justify-center"
+                  className="w-16 h-16 mx-auto mb-4 bg-[#1B4332] rounded-xl flex items-center justify-center"
                 >
                   <span className="text-white font-bold text-xl">
                     {tool.icon}
@@ -42,7 +42,7 @@ export default function Tools() {
                 </motion.div>
 
                 {/* Percentage */}
-                <div className="text-2xl font-bold text-[#2563EB] mb-1">
+                <div className="text-2xl font-bold text-[#1B4332] mb-1">
                   {tool.percentage}%
                 </div>
 
@@ -58,7 +58,7 @@ export default function Tools() {
                     whileInView={{ width: `${tool.percentage}%` }}
                     viewport={{ once: true }}
                     transition={{ duration: 1, delay: index * 0.1 + 0.3 }}
-                    className="h-full bg-[#F97316] rounded-full"
+                    className="h-full bg-[#FFB800] rounded-full"
                   />
                 </div>
               </motion.div>

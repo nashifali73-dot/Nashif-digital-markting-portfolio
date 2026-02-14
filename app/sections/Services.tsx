@@ -42,15 +42,15 @@ export default function Services() {
               <motion.div
                 whileHover={{ y: -8 }}
                 transition={{ duration: 0.3 }}
-                className="group bg-[#F5F5F5] rounded-2xl p-8 h-full transition-all duration-300 hover:shadow-xl hover:border-[#F97316] border-2 border-transparent"
+                className="group bg-[#F5F5F5] rounded-2xl p-8 h-full transition-all duration-300 hover:shadow-xl hover:border-[#FFB800] border-2 border-transparent"
               >
                 {/* Icon */}
-                <div className="w-14 h-14 bg-[#2563EB] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#F97316] transition-colors duration-300">
+                <div className="w-14 h-14 bg-[#1B4332] rounded-xl flex items-center justify-center mb-6 group-hover:bg-[#FFB800] transition-colors duration-300">
                   <service.icon className="w-7 h-7 text-white group-hover:text-white transition-colors duration-300" />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl font-bold text-[#2563EB] mb-3">
+                <h3 className="text-xl font-bold text-[#1B4332] mb-3">
                   {service.title}
                 </h3>
                 <p className="text-gray-600 mb-6 leading-relaxed">
@@ -60,12 +60,12 @@ export default function Services() {
                 {/* Link */}
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 text-[#2563EB] font-medium group/link"
+                  className="inline-flex items-center gap-2 text-[#1B4332] font-medium group/link"
                 >
-                  <span className="group-hover/link:text-[#F97316] transition-colors">
+                  <span className="group-hover/link:text-[#FFB800] transition-colors">
                     Learn more
                   </span>
-                  <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 group-hover/link:text-[#F97316] transition-all" />
+                  <ArrowRight className="w-4 h-4 group-hover/link:translate-x-1 group-hover/link:text-[#FFB800] transition-all" />
                 </a>
               </motion.div>
             </FadeUp>

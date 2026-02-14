@@ -29,13 +29,13 @@ export default function Button({
 
   const variants = {
     primary:
-      "bg-[#2563EB] text-white hover:bg-[#1d4ed8] hover:scale-[1.02]",
+      "bg-[#1B4332] text-white hover:bg-[#1d4ed8] hover:scale-[1.02]",
     outline:
-      "border-2 border-[#2563EB] text-[#2563EB] hover:bg-[#2563EB] hover:text-white hover:scale-[1.02]",
+      "border-2 border-[#1B4332] text-[#1B4332] hover:bg-[#1B4332] hover:text-white hover:scale-[1.02]",
     featured:
-      "bg-[#F97316] text-white hover:bg-[#ea580c] hover:scale-[1.02] font-semibold",
+      "bg-[#FFB800] text-white hover:bg-[#ea580c] hover:scale-[1.02] font-semibold",
     white:
-      "bg-white text-[#2563EB] hover:bg-gray-100 hover:scale-[1.02]",
+      "bg-white text-[#1B4332] hover:bg-gray-100 hover:scale-[1.02]",
   };
 
   const sizes = {

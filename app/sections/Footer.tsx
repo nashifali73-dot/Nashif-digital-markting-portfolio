@@ -36,9 +36,9 @@ const socialLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#2563EB]">
+    <footer className="bg-[#1B4332]">
       {/* Top Marquee */}
-      <div className="bg-[#F97316] py-4">
+      <div className="bg-[#FFB800] py-4">
         <Marquee className="text-white">
           {marqueeItems.map((item, index) => (
             <span key={index} className="flex items-center gap-8">
@@ -55,7 +55,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <a href="#home" className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 rounded-full bg-[#F97316] flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-[#FFB800] flex items-center justify-center">
                 <span className="text-white font-bold text-lg">N</span>
               </div>
               <span className="font-bold text-xl text-white">Nashif.</span>
@@ -69,7 +69,7 @@ export default function Footer() {
                 <a
                   key={social.label}
                   href={social.href}
-                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#F97316] transition-colors group"
+                  className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#FFB800] transition-colors group"
                   aria-label={social.label}
                 >
                   <social.icon className="w-5 h-5 text-white group-hover:text-white transition-colors" />
@@ -86,7 +86,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-white/70 hover:text-[#F97316] transition-colors text-sm"
+                    className="text-white/70 hover:text-[#FFB800] transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -103,7 +103,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-white/70 hover:text-[#F97316] transition-colors text-sm"
+                    className="text-white/70 hover:text-[#FFB800] transition-colors text-sm"
                   >
                     {link.label}
                   </a>
@@ -122,11 +122,11 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Your email"
-                className="flex-1 px-4 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:border-[#F97316] text-sm"
+                className="flex-1 px-4 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/50 focus:outline-none focus:border-[#FFB800] text-sm"
               />
               <button
                 type="submit"
-                className="w-12 h-12 bg-[#F97316] rounded-full flex items-center justify-center hover:bg-[#ea580c] transition-colors"
+                className="w-12 h-12 bg-[#FFB800] rounded-full flex items-center justify-center hover:bg-[#ea580c] transition-colors"
               >
                 <Send className="w-5 h-5 text-white" />
               </button>
@@ -145,13 +145,13 @@ export default function Footer() {
             <div className="flex gap-6">
               <a
                 href="#"
-                className="text-white/60 hover:text-[#F97316] text-sm transition-colors"
+                className="text-white/60 hover:text-[#FFB800] text-sm transition-colors"
               >
                 Privacy Policy
               </a>
               <a
                 href="#"
-                className="text-white/60 hover:text-[#F97316] text-sm transition-colors"
+                className="text-white/60 hover:text-[#FFB800] text-sm transition-colors"
               >
                 Terms of Service
               </a>

@@ -35,12 +35,12 @@ export default function Header() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <a href="#home" className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-full bg-[#2563EB] flex items-center justify-center">
+              <div className="w-10 h-10 rounded-full bg-[#1B4332] flex items-center justify-center">
                 <span className="text-white font-bold text-lg">N</span>
               </div>
               <span
                 className={`font-bold text-xl transition-colors ${
-                  isScrolled ? "text-[#2563EB]" : "text-[#2563EB]"
+                  isScrolled ? "text-[#1B4332]" : "text-[#1B4332]"
                 }`}
               >
                 Nashif.
@@ -53,8 +53,8 @@ export default function Header() {
                 <a
                   key={link.label}
                   href={link.href}
-                  className={`text-sm font-medium transition-colors hover:text-[#F97316] ${
-                    isScrolled ? "text-[#2563EB]" : "text-[#2563EB]"
+                  className={`text-sm font-medium transition-colors hover:text-[#FFB800] ${
+                    isScrolled ? "text-[#1B4332]" : "text-[#1B4332]"
                   }`}
                 >
                   {link.label}
@@ -76,7 +76,7 @@ export default function Header() {
             {/* Mobile Menu Button */}
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="lg:hidden p-2 text-[#2563EB]"
+              className="lg:hidden p-2 text-[#1B4332]"
             >
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
@@ -111,7 +111,7 @@ export default function Header() {
                     key={link.label}
                     href={link.href}
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="text-[#2563EB] font-medium py-2 border-b border-gray-100 hover:text-[#F97316] transition-colors"
+                    className="text-[#1B4332] font-medium py-2 border-b border-gray-100 hover:text-[#FFB800] transition-colors"
                   >
                     {link.label}
                   </a>

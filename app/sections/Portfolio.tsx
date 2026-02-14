@@ -118,11 +118,11 @@ export default function Portfolio() {
                   </motion.div>
 
                   {/* Hover Overlay */}
-                  <div className="absolute inset-0 bg-[#2563EB]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                  <div className="absolute inset-0 bg-[#1B4332]/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                     <motion.div
                       initial={{ scale: 0 }}
                       whileHover={{ scale: 1.1 }}
-                      className="w-14 h-14 bg-[#F97316] rounded-full flex items-center justify-center"
+                      className="w-14 h-14 bg-[#FFB800] rounded-full flex items-center justify-center"
                     >
                       <Plus className="w-6 h-6 text-white" />
                     </motion.div>
@@ -136,7 +136,7 @@ export default function Portfolio() {
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-xs font-medium bg-[#F97316]/10 text-[#2563EB] px-3 py-1 rounded-full"
+                        className="text-xs font-medium bg-[#FFB800]/10 text-[#1B4332] px-3 py-1 rounded-full"
                       >
                         {tag}
                       </span>
@@ -144,7 +144,7 @@ export default function Portfolio() {
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-xl font-bold text-[#2563EB] group-hover:text-[#F97316] transition-colors">
+                  <h3 className="text-xl font-bold text-[#1B4332] group-hover:text-[#FFB800] transition-colors">
                     {project.title}
                   </h3>
 
@@ -192,22 +192,22 @@ export default function Portfolio() {
                     {selectedProject.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-sm font-medium bg-[#F97316]/10 text-[#2563EB] px-4 py-1.5 rounded-full"
+                        className="text-sm font-medium bg-[#FFB800]/10 text-[#1B4332] px-4 py-1.5 rounded-full"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-bold text-[#2563EB] mb-2">
+                  <h2 className="text-3xl md:text-4xl font-bold text-[#1B4332] mb-2">
                     {selectedProject.title}
                   </h2>
-                  <p className="text-[#F97316] font-medium">{selectedProject.category}</p>
+                  <p className="text-[#FFB800] font-medium">{selectedProject.category}</p>
                 </div>
 
                 {/* Main Project Image */}
                 <div className="mb-8">
-                  <h3 className="text-lg font-semibold text-[#2563EB] mb-4 flex items-center gap-2">
-                    <TrendingUp className="w-5 h-5 text-[#F97316]" />
+                  <h3 className="text-lg font-semibold text-[#1B4332] mb-4 flex items-center gap-2">
+                    <TrendingUp className="w-5 h-5 text-[#FFB800]" />
                     Campaign Overview
                   </h3>
                   <div className="relative h-64 md:h-80 rounded-xl overflow-hidden">
@@ -223,29 +223,29 @@ export default function Portfolio() {
 
                 {/* Performance Stats */}
                 <div className="mb-8">
-                  <h3 className="text-lg font-semibold text-[#2563EB] mb-4 flex items-center gap-2">
-                    <MousePointer className="w-5 h-5 text-[#F97316]" />
+                  <h3 className="text-lg font-semibold text-[#1B4332] mb-4 flex items-center gap-2">
+                    <MousePointer className="w-5 h-5 text-[#FFB800]" />
                     Performance Statistics
                   </h3>
                   <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                     <div className="bg-[#F5F5F5] rounded-xl p-4 text-center">
-                      <div className="text-2xl md:text-3xl font-bold text-[#2563EB]">{selectedProject.stats.reach}</div>
+                      <div className="text-2xl md:text-3xl font-bold text-[#1B4332]">{selectedProject.stats.reach}</div>
                       <div className="text-sm text-gray-500 mt-1">Reach</div>
                     </div>
                     <div className="bg-[#F5F5F5] rounded-xl p-4 text-center">
-                      <div className="text-2xl md:text-3xl font-bold text-[#2563EB]">{selectedProject.stats.impressions}</div>
+                      <div className="text-2xl md:text-3xl font-bold text-[#1B4332]">{selectedProject.stats.impressions}</div>
                       <div className="text-sm text-gray-500 mt-1">Impressions</div>
                     </div>
                     <div className="bg-[#F5F5F5] rounded-xl p-4 text-center">
-                      <div className="text-2xl md:text-3xl font-bold text-[#F97316]">{selectedProject.stats.ctr}</div>
+                      <div className="text-2xl md:text-3xl font-bold text-[#FFB800]">{selectedProject.stats.ctr}</div>
                       <div className="text-sm text-gray-500 mt-1">CTR</div>
                     </div>
                     <div className="bg-[#F5F5F5] rounded-xl p-4 text-center">
-                      <div className="text-2xl md:text-3xl font-bold text-[#2563EB]">{selectedProject.stats.conversions}</div>
+                      <div className="text-2xl md:text-3xl font-bold text-[#1B4332]">{selectedProject.stats.conversions}</div>
                       <div className="text-sm text-gray-500 mt-1">Conversions</div>
                     </div>
                     <div className="bg-[#F5F5F5] rounded-xl p-4 text-center col-span-2 md:col-span-1">
-                      <div className="text-2xl md:text-3xl font-bold text-[#F97316]">{selectedProject.stats.roas}</div>
+                      <div className="text-2xl md:text-3xl font-bold text-[#FFB800]">{selectedProject.stats.roas}</div>
                       <div className="text-sm text-gray-500 mt-1">ROAS</div>
                     </div>
                   </div>
@@ -255,11 +255,11 @@ export default function Portfolio() {
                 <div className="grid md:grid-cols-2 gap-6">
                   {/* Ads Dashboard Preview */}
                   <div>
-                    <h3 className="text-lg font-semibold text-[#2563EB] mb-4 flex items-center gap-2">
-                      <Eye className="w-5 h-5 text-[#F97316]" />
+                    <h3 className="text-lg font-semibold text-[#1B4332] mb-4 flex items-center gap-2">
+                      <Eye className="w-5 h-5 text-[#FFB800]" />
                       Ads Dashboard
                     </h3>
-                    <div className="bg-gradient-to-br from-[#2563EB] to-[#1d4ed8] rounded-xl p-6 h-48 flex items-center justify-center">
+                    <div className="bg-gradient-to-br from-[#1B4332] to-[#1d4ed8] rounded-xl p-6 h-48 flex items-center justify-center">
                       <div className="text-white text-center">
                         <div className="text-4xl font-bold mb-2">Meta Ads</div>
                         <div className="text-sm opacity-80">Campaign Manager</div>
@@ -279,11 +279,11 @@ export default function Portfolio() {
 
                   {/* Insights/Metrics */}
                   <div>
-                    <h3 className="text-lg font-semibold text-[#2563EB] mb-4 flex items-center gap-2">
-                      <Users className="w-5 h-5 text-[#F97316]" />
+                    <h3 className="text-lg font-semibold text-[#1B4332] mb-4 flex items-center gap-2">
+                      <Users className="w-5 h-5 text-[#FFB800]" />
                       Audience Insights
                     </h3>
-                    <div className="bg-gradient-to-br from-[#F97316] to-[#ea580c] rounded-xl p-6 h-48 flex items-center justify-center">
+                    <div className="bg-gradient-to-br from-[#FFB800] to-[#ea580c] rounded-xl p-6 h-48 flex items-center justify-center">
                       <div className="text-white text-center">
                         <div className="text-4xl font-bold mb-2">Analytics</div>
                         <div className="text-sm opacity-80">Demographics & Behavior</div>

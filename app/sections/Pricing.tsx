@@ -55,9 +55,9 @@ const plans = [
 
 export default function Pricing() {
   return (
-    <section className="py-20 lg:py-32 bg-[#2563EB] relative overflow-hidden">
+    <section className="py-20 lg:py-32 bg-[#1B4332] relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-[#FFB800]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 right-0 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -75,13 +75,13 @@ export default function Pricing() {
                 whileHover={{ y: -8 }}
                 className={`relative rounded-2xl p-8 h-full flex flex-col ${
                   plan.featured
-                    ? "bg-[#F97316] text-white scale-105 shadow-2xl"
+                    ? "bg-[#FFB800] text-white scale-105 shadow-2xl"
                     : "bg-white/10 backdrop-blur-sm text-white border border-white/20"
                 }`}
               >
                 {/* Featured Badge */}
                 {plan.featured && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-[#2563EB] text-xs font-bold px-4 py-1 rounded-full">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-white text-[#1B4332] text-xs font-bold px-4 py-1 rounded-full">
                     MOST POPULAR
                   </div>
                 )}
@@ -130,12 +130,12 @@ export default function Pricing() {
                         className={`w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5 ${
                           plan.featured
                             ? "bg-white"
-                            : "bg-[#F97316]"
+                            : "bg-[#FFB800]"
                         }`}
                       >
                         <Check
                           className={`w-3 h-3 ${
-                            plan.featured ? "text-[#F97316]" : "text-white"
+                            plan.featured ? "text-[#FFB800]" : "text-white"
                           }`}
                         />
                       </div>

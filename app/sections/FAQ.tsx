@@ -41,15 +41,15 @@ export default function FAQ() {
   };
 
   return (
-    <section className="py-20 lg:py-32 bg-[#2563EB] relative overflow-hidden">
+    <section className="py-20 lg:py-32 bg-[#1B4332] relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#FFB800]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <FadeUp>
           <div className="text-center mb-12">
-            <span className="text-sm font-medium text-[#F97316] tracking-wide">
+            <span className="text-sm font-medium text-[#FFB800] tracking-wide">
               — FAQ
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-2">
@@ -64,7 +64,7 @@ export default function FAQ() {
               <div
                 className={`rounded-xl overflow-hidden transition-all duration-300 ${
                   openIndex === index
-                    ? "bg-[#F97316]"
+                    ? "bg-[#FFB800]"
                     : "bg-white/10 backdrop-blur-sm border border-white/20"
                 }`}
               >
@@ -83,11 +83,11 @@ export default function FAQ() {
                     className={`w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-colors ${
                       openIndex === index
                         ? "bg-white"
-                        : "bg-[#F97316]"
+                        : "bg-[#FFB800]"
                     }`}
                   >
                     {openIndex === index ? (
-                      <Minus className="w-4 h-4 text-[#F97316]" />
+                      <Minus className="w-4 h-4 text-[#FFB800]" />
                     ) : (
                       <Plus className="w-4 h-4 text-white" />
                     )}

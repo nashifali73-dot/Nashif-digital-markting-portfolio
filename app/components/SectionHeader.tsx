@@ -30,14 +30,14 @@ export default function SectionHeader({
         <div>
           <span
             className={`text-sm font-medium tracking-wide ${
-              light ? "text-[#F97316]" : "text-[#2563EB]/70"
+              light ? "text-[#FFB800]" : "text-[#1B4332]/70"
             }`}
           >
             {label}
           </span>
           <h2
             className={`text-3xl md:text-4xl lg:text-5xl font-bold mt-2 ${
-              light ? "text-white" : "text-[#2563EB]"
+              light ? "text-white" : "text-[#1B4332]"
             }`}
           >
             {title}
@@ -49,7 +49,7 @@ export default function SectionHeader({
             className={`text-sm font-medium hover:underline transition-all ${
               light
                 ? "text-white/80 hover:text-white"
-                : "text-[#2563EB] hover:text-[#2563EB]/80"
+                : "text-[#1B4332] hover:text-[#1B4332]/80"
             }`}
           >
             {action.label}

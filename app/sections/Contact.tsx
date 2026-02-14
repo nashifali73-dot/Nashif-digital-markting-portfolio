@@ -103,10 +103,10 @@ export default function Contact() {
           {/* Left Column - Contact Info */}
           <div>
             <FadeUp>
-              <span className="text-sm font-medium text-[#2563EB]/70 tracking-wide">
+              <span className="text-sm font-medium text-[#1B4332]/70 tracking-wide">
                 — Contact Us
               </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2563EB] mt-2 mb-6">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1B4332] mt-2 mb-6">
                 Let&apos;s Talk for Your Next Projects
               </h2>
               <p className="text-gray-600 text-lg mb-8">
@@ -122,12 +122,12 @@ export default function Contact() {
                     href={item.href}
                     className="flex items-center gap-4 group"
                   >
-                    <div className="w-12 h-12 bg-[#F97316] rounded-xl flex items-center justify-center group-hover:bg-[#2563EB] transition-colors">
+                    <div className="w-12 h-12 bg-[#FFB800] rounded-xl flex items-center justify-center group-hover:bg-[#1B4332] transition-colors">
                       <item.icon className="w-5 h-5 text-white group-hover:text-white transition-colors" />
                     </div>
                     <div>
                       <p className="text-sm text-gray-500">{item.label}</p>
-                      <p className="font-medium text-[#2563EB] group-hover:text-[#F97316] transition-colors">
+                      <p className="font-medium text-[#1B4332] group-hover:text-[#FFB800] transition-colors">
                         {item.value}
                       </p>
                     </div>
@@ -146,13 +146,13 @@ export default function Contact() {
               <div className="grid md:grid-cols-2 gap-6">
                 {/* Name */}
                 <div>
-                  <label className="block text-sm font-medium text-[#2563EB] mb-2">
+                  <label className="block text-sm font-medium text-[#1B4332] mb-2">
                     Name *
                   </label>
                   <input
                     {...register("name", { required: "Name is required" })}
                     type="text"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F97316] focus:ring-2 focus:ring-[#F97316]/20 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#FFB800] focus:ring-2 focus:ring-[#FFB800]/20 outline-none transition-all"
                     placeholder="Your name"
                   />
                   {errors.name && (
@@ -164,7 +164,7 @@ export default function Contact() {
 
                 {/* Email */}
                 <div>
-                  <label className="block text-sm font-medium text-[#2563EB] mb-2">
+                  <label className="block text-sm font-medium text-[#1B4332] mb-2">
                     Email *
                   </label>
                   <input
@@ -176,7 +176,7 @@ export default function Contact() {
                       },
                     })}
                     type="email"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F97316] focus:ring-2 focus:ring-[#F97316]/20 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#FFB800] focus:ring-2 focus:ring-[#FFB800]/20 outline-none transition-all"
                     placeholder="your@email.com"
                   />
                   {errors.email && (
@@ -188,25 +188,25 @@ export default function Contact() {
 
                 {/* Phone */}
                 <div>
-                  <label className="block text-sm font-medium text-[#2563EB] mb-2">
+                  <label className="block text-sm font-medium text-[#1B4332] mb-2">
                     Phone
                   </label>
                   <input
                     {...register("phone")}
                     type="tel"
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F97316] focus:ring-2 focus:ring-[#F97316]/20 outline-none transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#FFB800] focus:ring-2 focus:ring-[#FFB800]/20 outline-none transition-all"
                     placeholder="+1 234 567 890"
                   />
                 </div>
 
                 {/* Interest */}
                 <div>
-                  <label className="block text-sm font-medium text-[#2563EB] mb-2">
+                  <label className="block text-sm font-medium text-[#1B4332] mb-2">
                     Interest *
                   </label>
                   <select
                     {...register("interest", { required: "Please select an interest" })}
-                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F97316] focus:ring-2 focus:ring-[#F97316]/20 outline-none transition-all bg-white"
+                    className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#FFB800] focus:ring-2 focus:ring-[#FFB800]/20 outline-none transition-all bg-white"
                   >
                     <option value="">Select a service</option>
                     <option value="Digital Marketing">Digital Marketing</option>
@@ -226,13 +226,13 @@ export default function Contact() {
 
               {/* Message */}
               <div className="mt-6">
-                <label className="block text-sm font-medium text-[#2563EB] mb-2">
+                <label className="block text-sm font-medium text-[#1B4332] mb-2">
                   Message *
                 </label>
                 <textarea
                   {...register("message", { required: "Message is required" })}
                   rows={4}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#F97316] focus:ring-2 focus:ring-[#F97316]/20 outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#FFB800] focus:ring-2 focus:ring-[#FFB800]/20 outline-none transition-all resize-none"
                   placeholder="Tell me about your project..."
                 />
                 {errors.message && (
@@ -247,7 +247,7 @@ export default function Contact() {
                 type="submit"
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full mt-6 bg-[#2563EB] text-white font-medium py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#1d4ed8] transition-colors"
+                className="w-full mt-6 bg-[#1B4332] text-white font-medium py-4 rounded-full flex items-center justify-center gap-2 hover:bg-[#1d4ed8] transition-colors"
               >
                 Submit
                 <ArrowRight className="w-5 h-5" />
@@ -280,10 +280,10 @@ export default function Contact() {
               >
                 <X className="w-6 h-6" />
               </button>
-              <div className="w-16 h-16 bg-[#F97316] rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-[#FFB800] rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-bold text-[#2563EB] mb-2">
+              <h3 className="text-2xl font-bold text-[#1B4332] mb-2">
                 Thank You!
               </h3>
               <p className="text-gray-600 mb-6">
@@ -291,7 +291,7 @@ export default function Contact() {
               </p>
               <button
                 onClick={closePopup}
-                className="bg-[#2563EB] text-white px-8 py-3 rounded-full font-medium hover:bg-[#1d4ed8] transition-colors"
+                className="bg-[#1B4332] text-white px-8 py-3 rounded-full font-medium hover:bg-[#1d4ed8] transition-colors"
               >
                 Got it!
               </button>

@@ -89,10 +89,10 @@ export default function Testimonials() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <FadeUp>
           <div className="text-center mb-12">
-            <span className="text-sm font-medium text-[#2563EB]/70 tracking-wide">
+            <span className="text-sm font-medium text-[#1B4332]/70 tracking-wide">
               — Testimonials
             </span>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#2563EB] mt-2">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#1B4332] mt-2">
               What Clients Say
             </h2>
           </div>
@@ -101,7 +101,7 @@ export default function Testimonials() {
         <FadeUp delay={0.2}>
           <div className="relative max-w-4xl mx-auto">
             {/* Quote Icon */}
-            <div className="absolute -top-6 left-8 w-12 h-12 bg-[#F97316] rounded-full flex items-center justify-center z-10">
+            <div className="absolute -top-6 left-8 w-12 h-12 bg-[#FFB800] rounded-full flex items-center justify-center z-10">
               <Quote className="w-6 h-6 text-white" />
             </div>
 
@@ -127,7 +127,7 @@ export default function Testimonials() {
                       (_, i) => (
                         <Star
                           key={i}
-                          className="w-5 h-5 fill-[#F97316] text-[#F97316]"
+                          className="w-5 h-5 fill-[#FFB800] text-[#FFB800]"
                         />
                       )
                     )}
@@ -140,13 +140,13 @@ export default function Testimonials() {
 
                   {/* Author */}
                   <div className="flex items-center gap-4">
-                    <div className="w-14 h-14 bg-[#2563EB] rounded-full flex items-center justify-center">
+                    <div className="w-14 h-14 bg-[#1B4332] rounded-full flex items-center justify-center">
                       <span className="text-white font-bold">
                         {testimonials[currentIndex].avatar}
                       </span>
                     </div>
                     <div className="text-left">
-                      <h4 className="font-bold text-[#2563EB]">
+                      <h4 className="font-bold text-[#1B4332]">
                         {testimonials[currentIndex].name}
                       </h4>
                       <p className="text-sm text-gray-500">
@@ -160,15 +160,15 @@ export default function Testimonials() {
               {/* Navigation Buttons */}
               <button
                 onClick={() => paginate(-1)}
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-[#F5F5F5] hover:bg-[#F97316] rounded-full flex items-center justify-center transition-colors group"
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-[#F5F5F5] hover:bg-[#FFB800] rounded-full flex items-center justify-center transition-colors group"
               >
-                <ChevronLeft className="w-5 h-5 text-[#2563EB] group-hover:text-white" />
+                <ChevronLeft className="w-5 h-5 text-[#1B4332] group-hover:text-white" />
               </button>
               <button
                 onClick={() => paginate(1)}
-                className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-[#F5F5F5] hover:bg-[#F97316] rounded-full flex items-center justify-center transition-colors group"
+                className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-[#F5F5F5] hover:bg-[#FFB800] rounded-full flex items-center justify-center transition-colors group"
               >
-                <ChevronRight className="w-5 h-5 text-[#2563EB] group-hover:text-white" />
+                <ChevronRight className="w-5 h-5 text-[#1B4332] group-hover:text-white" />
               </button>
             </div>
 
@@ -183,8 +183,8 @@ export default function Testimonials() {
                   }}
                   className={`w-2 h-2 rounded-full transition-all ${
                     index === currentIndex
-                      ? "w-8 bg-[#F97316]"
-                      : "bg-[#2563EB]/30 hover:bg-[#2563EB]/50"
+                      ? "w-8 bg-[#FFB800]"
+                      : "bg-[#1B4332]/30 hover:bg-[#1B4332]/50"
                   }`}
                 />
               ))}

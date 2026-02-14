@@ -25,9 +25,9 @@ const orbitingSkills = [
 
 export default function About() {
   return (
-    <section id="about" className="py-20 lg:py-32 bg-[#2563EB] relative overflow-hidden">
+    <section id="about" className="py-20 lg:py-32 bg-[#1B4332] relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-[#F97316]/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-[#FFB800]/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -37,10 +37,10 @@ export default function About() {
             <FadeUp>
               <div className="relative w-72 h-72 md:w-96 md:h-96">
                 {/* Orange border circle */}
-                <div className="absolute inset-0 rounded-full border-4 border-[#F97316]" />
+                <div className="absolute inset-0 rounded-full border-4 border-[#FFB800]" />
 
                 {/* Photo */}
-                <div className="absolute inset-2 rounded-full overflow-hidden z-10 bg-[#2563EB]">
+                <div className="absolute inset-2 rounded-full overflow-hidden z-10 bg-[#1B4332]">
                   <Image
                     src="/nashif-photo.jpg"
                     alt="Nashif Ali - Digital Marketer"
@@ -83,7 +83,7 @@ export default function About() {
                           ease: "linear",
                           delay: index * 0.5,
                         }}
-                        className="bg-[#F97316] text-white text-xs font-semibold px-3 py-1.5 rounded-full whitespace-nowrap shadow-lg"
+                        className="bg-[#FFB800] text-white text-xs font-semibold px-3 py-1.5 rounded-full whitespace-nowrap shadow-lg"
                       >
                         {skill}
                       </motion.div>
@@ -125,7 +125,7 @@ export default function About() {
               <div className="grid grid-cols-3 gap-6 mb-8">
                 {stats.map((stat) => (
                   <div key={stat.label} className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-[#F97316]">
+                    <div className="text-3xl md:text-4xl font-bold text-[#FFB800]">
                       <AnimatedCounter
                         end={stat.value}
                         suffix={stat.suffix}

@@ -55,14 +55,14 @@ export default function Experience() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Education Column */}
           <div>
-            <h3 className="text-xl font-bold text-[#2563EB] mb-8 flex items-center gap-2">
-              <GraduationCap className="w-6 h-6 text-[#F97316]" />
+            <h3 className="text-xl font-bold text-[#1B4332] mb-8 flex items-center gap-2">
+              <GraduationCap className="w-6 h-6 text-[#FFB800]" />
               Education
             </h3>
 
             <div className="relative">
               {/* Timeline Line */}
-              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-[#F97316]" />
+              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-[#FFB800]" />
 
               <div className="space-y-8">
                 {education.map((item, index) => (
@@ -72,16 +72,16 @@ export default function Experience() {
                       className="relative pl-16"
                     >
                       {/* Timeline Dot */}
-                      <div className="absolute left-0 w-12 h-12 bg-[#F5F5F5] rounded-full flex items-center justify-center border-2 border-[#F97316]">
-                        <item.icon className="w-5 h-5 text-[#2563EB]" />
+                      <div className="absolute left-0 w-12 h-12 bg-[#F5F5F5] rounded-full flex items-center justify-center border-2 border-[#FFB800]">
+                        <item.icon className="w-5 h-5 text-[#1B4332]" />
                       </div>
 
                       {/* Content */}
                       <div className="bg-[#F5F5F5] rounded-xl p-5 hover:shadow-lg transition-shadow">
-                        <span className="text-sm font-medium text-[#F97316]">
+                        <span className="text-sm font-medium text-[#FFB800]">
                           {item.period}
                         </span>
-                        <h4 className="text-lg font-bold text-[#2563EB] mt-1">
+                        <h4 className="text-lg font-bold text-[#1B4332] mt-1">
                           {item.title}
                         </h4>
                         <p className="text-gray-600 text-sm mt-1">
@@ -97,14 +97,14 @@ export default function Experience() {
 
           {/* Work Column */}
           <div>
-            <h3 className="text-xl font-bold text-[#2563EB] mb-8 flex items-center gap-2">
-              <Briefcase className="w-6 h-6 text-[#F97316]" />
+            <h3 className="text-xl font-bold text-[#1B4332] mb-8 flex items-center gap-2">
+              <Briefcase className="w-6 h-6 text-[#FFB800]" />
               Work Experience
             </h3>
 
             <div className="relative">
               {/* Timeline Line */}
-              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-[#F97316]" />
+              <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-[#FFB800]" />
 
               <div className="space-y-8">
                 {work.map((item, index) => (
