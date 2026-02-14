@@ -40,7 +40,7 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left Column - Photo with Clustered Tags */}
+          {/* Left Column - Photo with Overlay Content */}
           <div className="flex justify-center">
             <FadeUp>
               <div className="relative w-80 h-80">
@@ -57,8 +57,87 @@ export default function About() {
                   />
                 </div>
                           
-                {/* Clustered Skill Tags - Bottom half */}
-                <div className="absolute bottom-0 left-0 right-0 h-1/2 flex flex-col justify-end pb-4">
+                {/* Content Overlay - Front of Photo */}
+                <div className="absolute inset-0 z-20 flex flex-col items-center justify-center text-center p-6">
+                  {/* Main Heading */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.1 }}
+                    className="mb-4"
+                  >
+                    <h2 className="text-2xl md:text-3xl font-bold text-white">
+                      Who is <span className="text-[#FFB800] italic">Nashif Ali</span>?
+                    </h2>
+                  </motion.div>
+                            
+                  {/* Bio Text */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.2 }}
+                    className="mb-6"
+                  >
+                    <p className="text-white/90 text-sm md:text-base leading-relaxed max-w-xs">
+                      I'm a passionate Digital Marketer based in India, dedicated to helping businesses grow their online presence through strategic marketing solutions.
+                    </p>
+                  </motion.div>
+                            
+                  {/* Stats */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.3 }}
+                    className="grid grid-cols-3 gap-4 mb-6 w-full max-w-xs"
+                  >
+                    {stats.map((stat, index) => (
+                      <div key={stat.label} className="text-center">
+                        <div className="text-xl md:text-2xl font-bold text-[#FFB800]">
+                          <AnimatedCounter
+                            end={stat.value}
+                            suffix={stat.suffix}
+                          />
+                        </div>
+                        <div className="text-white/70 text-xs mt-1">
+                          {stat.label}
+                        </div>
+                      </div>
+                    ))}
+                  </motion.div>
+                            
+                  {/* Download CV Button */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.4 }}
+                  >
+                    <Button
+                      variant="featured"
+                      size="sm"
+                      icon={<Download className="w-4 h-4" />}
+                      href="/Nashif-Ali-Resume.pdf"
+                      download
+                      className="text-xs px-4 py-2"
+                    >
+                      Download CV
+                    </Button>
+                  </motion.div>
+                            
+                  {/* Signature */}
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6, delay: 0.5 }}
+                    className="mt-4"
+                  >
+                    <div className="text-white/60 italic text-sm">
+                      Nashif Ali
+                    </div>
+                  </motion.div>
+                </div>
+                          
+                {/* Clustered Skill Tags - Bottom half (behind content) */}
+                <div className="absolute bottom-0 left-0 right-0 h-1/2 flex flex-col justify-end pb-4 z-10">
                   {/* Row 1 - Center */}
                   <div className="flex justify-center mb-2">
                     <motion.div
@@ -135,68 +214,21 @@ export default function About() {
             </FadeUp>
           </div>
 
-          {/* Right Column - Content */}
+          {/* Right Column - Additional Content */}
           <div>
-            <div className="mb-8">
-              <span className="text-sm font-medium text-white/70 tracking-wide">
-                — About Me
-              </span>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mt-2">
-                Who is <span className="text-[#FFB800] italic">Nashif Ali</span>?
-              </h2>
-            </div>
-
-            <FadeUp delay={0.2}>
+            <FadeUp delay={0.6}>
               <p className="text-white/80 text-lg leading-relaxed mb-6">
-                I&apos;m a passionate Digital Marketer based in India, dedicated to
-                helping businesses grow their online presence through strategic
-                marketing solutions. With expertise in Meta Ads, Google Ads, and
-                content creation, I deliver results that matter.
-              </p>
-            </FadeUp>
-
-            <FadeUp delay={0.3}>
-              <p className="text-white/80 text-lg leading-relaxed mb-8">
                 My approach combines creativity with data-driven strategies to
                 create campaigns that not only look great but also convert.
-                Whether you&apos;re a startup or an established brand, I&apos;m here to
+                Whether you're a startup or an established brand, I'm here to
                 elevate your digital presence.
               </p>
             </FadeUp>
-
-            {/* Stats */}
-            <FadeUp delay={0.4}>
-              <div className="grid grid-cols-3 gap-6 mb-8">
-                {stats.map((stat) => (
-                  <div key={stat.label} className="text-center">
-                    <div className="text-3xl md:text-4xl font-bold text-[#FFB800]">
-                      <AnimatedCounter
-                        end={stat.value}
-                        suffix={stat.suffix}
-                      />
-                    </div>
-                    <div className="text-white/60 text-sm mt-1">
-                      {stat.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </FadeUp>
-
-            {/* CTA Buttons */}
-            <FadeUp delay={0.5}>
+                      
+            <FadeUp delay={0.7}>
               <div className="flex flex-wrap items-center gap-4">
-                <Button
-                  variant="featured"
-                  size="lg"
-                  icon={<Download className="w-5 h-5" />}
-                  href="/Nashif-Ali-Resume.pdf"
-                  download
-                >
-                  Download CV
-                </Button>
                 <div className="text-white/60 italic text-sm">
-                  Nashif Ali
+                  Let's build something amazing together!
                 </div>
               </div>
             </FadeUp>
