@@ -50,17 +50,27 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-                className="inline-block text-[#1B4332] italic underline decoration-[#1B4332] decoration-2 underline-offset-4"
+                className="inline-block text-[#FFB800] italic underline decoration-[#FFB800] decoration-2 underline-offset-4 font-bold"
               >
                 Nashif Ali,
-              </motion.span>{" "}
+              </motion.span>
+              <br />
               <motion.span
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.45, ease: "easeOut" }}
-                className="inline-block text-[#FFB800]"
+                className="inline-block text-[#1A1A1A]"
               >
-                Digital Marketer Based in INDIA
+                Digital Marketer
+              </motion.span>
+              <br />
+              <motion.span
+                initial={{ opacity: 0, y: 30 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6, ease: "easeOut" }}
+                className="inline-block text-[#1A1A1A]"
+              >
+                Based in INDIA.
               </motion.span>
             </h1>
 
