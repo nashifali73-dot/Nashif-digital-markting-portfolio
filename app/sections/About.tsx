@@ -57,8 +57,8 @@ export default function About() {
                   />
                 </div>
                               
-                {/* Clustered Skill Tags - Bottom half, fully visible */}
-                <div className="absolute bottom-0 left-0 right-0 h-1/2 flex flex-col justify-end pb-6 z-20">
+                {/* Clustered Skill Tags - Lower bottom half, below face */}
+                <div className="absolute bottom-0 left-0 right-0 h-2/5 flex flex-col justify-end pb-4 z-20">
                   {/* Row 1 - Center */}
                   <div className="flex justify-center mb-2">
                     <motion.div
