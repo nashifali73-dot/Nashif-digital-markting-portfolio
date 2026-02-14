@@ -50,7 +50,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-                className="inline-block text-[#FFB800] italic underline decoration-[#FFB800] decoration-2 underline-offset-4 font-bold"
+                className="inline-block text-[#FFB800] italic font-bold"
               >
                 Nashif Ali,
               </motion.span>
