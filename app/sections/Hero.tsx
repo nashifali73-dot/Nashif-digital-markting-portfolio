@@ -44,7 +44,7 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
                 className="inline-block text-[#1A1A1A]"
               >
-                I&apos;m{" "}
+                I'm{" "}
               </motion.span>
               <motion.span
                 initial={{ opacity: 0, y: 30 }}
@@ -52,7 +52,7 @@ export default function Hero() {
                 transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
                 className="inline-block text-[#FFB800] italic font-bold"
               >
-                Nashif Ali,
+                {" "}Nashif Ali,
               </motion.span>
               <br />
               <motion.span
