@@ -57,15 +57,15 @@ export default function About() {
                   />
                 </div>
                               
-                {/* Clustered Skill Tags - Lower bottom half, below face */}
-                <div className="absolute bottom-0 left-0 right-0 h-2/5 flex flex-col justify-end pb-4 z-20">
+                {/* Clustered Skill Tags - Lower at chin level */}
+                <div className="absolute bottom-0 left-0 right-0 h-1/3 flex flex-col justify-end pb-2 z-20">
                   {/* Row 1 - Center */}
                   <div className="flex justify-center mb-2">
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.2 }}
-                      className="bg-[#FFB800] text-white text-[11px] font-bold uppercase px-4 py-2 rounded-full shadow-lg transform rotate-[-2deg]"
+                      className="bg-[#FFB800] text-white text-[9px] font-bold uppercase px-2.5 py-1 rounded-full shadow-lg transform rotate-[-2deg]"
                     >
                       Digital Marketing
                     </motion.div>
@@ -77,7 +77,7 @@ export default function About() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.3 }}
-                      className="bg-[#1B4332] text-white text-[11px] font-bold uppercase px-4 py-2 rounded-full shadow-lg transform rotate-[-3deg]"
+                      className="bg-[#1B4332] text-white text-[9px] font-bold uppercase px-2.5 py-1 rounded-full shadow-lg transform rotate-[-3deg]"
                     >
                       Meta Ads
                     </motion.div>
@@ -85,7 +85,7 @@ export default function About() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.35 }}
-                      className="bg-[#FFB800] text-white text-[11px] font-bold uppercase px-4 py-2 rounded-full shadow-lg transform rotate-[2deg]"
+                      className="bg-[#FFB800] text-white text-[9px] font-bold uppercase px-2.5 py-1 rounded-full shadow-lg transform rotate-[2deg]"
                     >
                       Google Ads
                     </motion.div>
@@ -97,7 +97,7 @@ export default function About() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.4 }}
-                      className="bg-[#FFB800] text-white text-[11px] font-bold uppercase px-4 py-2 rounded-full shadow-lg transform rotate-[1deg]"
+                      className="bg-[#FFB800] text-white text-[9px] font-bold uppercase px-2.5 py-1 rounded-full shadow-lg transform rotate-[1deg]"
                     >
                       Content Creation
                     </motion.div>
@@ -105,7 +105,7 @@ export default function About() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.45 }}
-                      className="bg-[#1B4332] text-white text-[11px] font-bold uppercase px-4 py-2 rounded-full shadow-lg transform rotate-[-1deg]"
+                      className="bg-[#1B4332] text-white text-[9px] font-bold uppercase px-2.5 py-1 rounded-full shadow-lg transform rotate-[-1deg]"
                     >
                       SEO
                     </motion.div>
@@ -113,7 +113,7 @@ export default function About() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.5 }}
-                      className="bg-[#1B4332] text-white text-[11px] font-bold uppercase px-4 py-2 rounded-full shadow-lg transform rotate-[3deg]"
+                      className="bg-[#1B4332] text-white text-[9px] font-bold uppercase px-2.5 py-1 rounded-full shadow-lg transform rotate-[3deg]"
                     >
                       Video Editing
                     </motion.div>
@@ -125,7 +125,7 @@ export default function About() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.5, delay: 0.55 }}
-                      className="bg-[#FFB800] text-white text-[11px] font-bold uppercase px-4 py-2 rounded-full shadow-lg transform rotate-[-2deg]"
+                      className="bg-[#FFB800] text-white text-[9px] font-bold uppercase px-2.5 py-1 rounded-full shadow-lg transform rotate-[-2deg]"
                     >
                       Graphic Design
                     </motion.div>
