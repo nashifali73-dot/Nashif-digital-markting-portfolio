@@ -40,25 +40,25 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left Column - Photo with Orbiting Skills */}
+          {/* Left Column - Photo with Clustered Tags */}
           <div className="flex justify-center">
             <FadeUp>
-              <div className="relative w-72 h-72 md:w-96 md:h-96">
-                {/* Orange border circle */}
-                <div className="absolute inset-0 rounded-full border-4 border-[#FFB800]" />
-
-                {/* Photo */}
-                <div className="absolute inset-2 rounded-full overflow-hidden z-10 bg-[#1B4332]">
+              <div className="relative w-80 h-80">
+                {/* Complete yellow border circle - full ring with 8px width */}
+                <div className="absolute inset-0 rounded-full border-8 border-[#FFB800] z-10" />
+                              
+                {/* Photo - positioned behind border */}
+                <div className="absolute inset-4 rounded-full overflow-hidden z-0 bg-[#1B4332]">
                   <Image
-                    src="/mnt/kimi/upload/WhatsApp Image 2026-02-12 at 12.50.51 PM.jpeg"
+                    src="/nashif-whatsapp-photo.jpeg"
                     alt="Nashif Ali - Digital Marketer"
                     fill
-                    className="object-cover object-top"
+                    className="object-cover object-center"
                   />
                 </div>
-
-                {/* Clustered Skill Tags - Bottom half */}
-                <div className="absolute bottom-0 left-0 right-0 h-1/2 flex flex-col justify-end pb-4">
+                              
+                {/* Clustered Skill Tags - Bottom half, fully visible */}
+                <div className="absolute bottom-0 left-0 right-0 h-1/2 flex flex-col justify-end pb-6 z-20">
                   {/* Row 1 - Center */}
                   <div className="flex justify-center mb-2">
                     <motion.div
