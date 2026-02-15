@@ -3,9 +3,21 @@
 import { motion } from "framer-motion";
 
 export default function WhatsAppButton() {
+  const whatsappMessage = encodeURIComponent(`Hello Nashif Ali! I'm interested in your digital marketing services. What services are you offering?
+
+I'm looking for information about:
+▪ Social Media Marketing
+▪ Google Ads / Meta Ads  
+▪ Content Creation
+▪ SEO Services
+▪ Brand Identity
+▪ Other services
+
+Please let me know more details and pricing.`);
+
   return (
     <motion.a
-      href="https://wa.me/919567483538"
+      href={`https://wa.me/919567483538?text=${whatsappMessage}`}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-50 lg:bottom-8 lg:right-8"
