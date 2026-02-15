@@ -10,6 +10,7 @@ import Testimonials from "./sections/Testimonials";
 import FAQ from "./sections/FAQ";
 import Contact from "./sections/Contact";
 import Footer from "./sections/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
         <Contact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </>
   );
 }
